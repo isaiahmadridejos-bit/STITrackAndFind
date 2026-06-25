@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>STI ProjectTrackAndFind</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+  <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav>
+    <a class="logo-link" href="#Home">
+      <img src="assets/sti-logo.jpg" alt="STI Logo" class="logo">
+      <span class="logo-text">STI Project<em>TrackFind</em></span>
+    </a>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu"><span class="iconify" data-icon="iconsax:menu" data-inline="false"></span></button>
+    <div class="nav-links" id="navLinks">
+      <a href="#Tracks">Tracks</a>
+      <a href="#how">How It Works</a>
+      <a href="#Quiz">Quiz</a>
+      <a href="#About">About</a>
+      <a href="#Quiz" class="nav-cta"><span class="iconify" data-icon="iconsax:game" data-inline="false" style="margin-right:8px"></span>Play Cluster Quest</a>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section id="Home">
+    <div class="hero-overlay"></div>
+    
+    <h1>STI<br>Project<span class="highlight">TrackAndFind</span></h1>
+    <p>
+      Helping Grade 10 students find the right SHS track and cluster so you can be future-ready with STI College Cubao.
+      You're not alone. a lot of students feel unsure about which track or cluster to pick. We lay everything out clearly so you can explore your options and decide with confidence.
+    </p>
+    <div class="hero-buttons">
+      <a href="#Tracks" class="btn-primary">Explore the Tracks</a>
+      <a href="#Quiz" class="btn-secondary"><span class="iconify" data-icon="iconsax:game" data-inline="false" style="margin-right:8px"></span>Play Cluster Quest</a>
+    </div>
+  </section>
+
+  <!-- STATS -->
+  <div class="stats">
+    <div class="stat"><div class="stat-n">2</div><div class="stat-l">Official SHS Tracks</div></div>
+    <div class="stat"><div class="stat-n">9+</div><div class="stat-l">Clusters to Explore</div></div>
+    <div class="stat"><div class="stat-n">DepEd</div><div class="stat-l">Official Curriculum</div></div>
+    <div class="stat"><div class="stat-n">Free</div><div class="stat-l">No Sign-up Needed</div></div>
+  </div>
+
+  <!-- TRACKS -->
+  <section id="Tracks">
+    <div class="container">
+      <div class="sec-header centered">
+        <div class="sec-label">The Two SHS Tracks</div>
+        <h2 class="sec-title">Explore the SHS Tracks</h2>
+        <p class="sec-sub">
+          Under the Strengthened SHS Program, there are two main tracks: <strong>Academic</strong> and <strong>TechPro</strong>.
+          Click any track to explore the clusters inside it and see where each one can take you.
+        </p>
+      </div>
+      <div class="tracks-grid" id="tracksGrid"></div>
+      <div class="deped-note">
+        <strong><span class="iconify" data-icon="iconsax:clipboard" data-inline="false" style="margin-right:8px"></span>Based on the official DepEd Strengthened SHS Program.</strong>
+        All tracks, clusters, and subjects listed here follow the curriculum released by the Department of Education (DepEd) for the Strengthened Senior High School (SSHS) Program.
+      </div>
+    </div>
+  </section>
+
+  <!-- HOW IT WORKS -->
+  <section id="how" class="section-alt">
+    <div class="container">
+      <div class="steps-wrap">
+        <div class="steps-side">
+          <div class="sec-label">Simple Steps</div>
+          <h2 class="sec-title">How does this work?</h2>
+          <p class="sec-sub">Three easy steps and you'll have a much clearer picture of where you're headed in Senior High School.</p>
+        </div>
+        <div class="steps-list">
+          <div class="step-row">
+            <div class="step-n">01</div>
+            <div class="step-body">
+              <h4>Pick the track that sounds like you</h4>
+              <p>Do you see yourself in college someday, or would you rather learn real-world skills and maybe earn a certification? That's basically the difference between the Academic and TechPro tracks. Start there.</p>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-n">02</div>
+            <div class="step-body">
+              <h4>Dig into the clusters inside that track</h4>
+              <p>Each track has smaller clusters — like STEM, Business, Arts, ICT, and more. Click one and you'll see exactly what subjects you'll take, what skills you'll develop, and what it's designed to lead to.</p>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-n">03</div>
+            <div class="step-body">
+              <h4>Follow your navigation path</h4>
+              <p>Every cluster shows you a step-by-step path: from your Grade 11 subjects, to the skills you'll build, to college courses or certifications, all the way to possible careers. That way you can make a real, informed choice — not just a guess.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- QUIZ -->
+  <section id="Quiz">
+    <div class="container">
+      <div class="sec-header centered">
+        <div class="sec-label"><span class="iconify" data-icon="iconsax:game" data-inline="false" style="margin-right:6px"></span>Cluster Quest</div>
+        <h2 class="sec-title">Play Your Way to the Right Cluster</h2>
+        <p class="sec-sub">No boring forms here — just quick scenarios. Pick what feels like <em>you</em> and discover your SHS match at the end!</p>
+      </div>
+      <div id="quizBox"></div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="About" class="section-alt">
+    <div class="container">
+      <div class="sec-header centered">
+        <div class="sec-label">About This System</div>
+        <h2 class="sec-title">Why we built ProjectTrackFind</h2>
+        <p class="sec-sub">
+          Choosing a cluster is one of the biggest decisions you'll make in Junior High School. We built this to make sure you actually understand what you're choosing — not just go along with what your friends pick.
+        </p>
+      </div>
+      <div class="about-grid">
+        <div class="about-card">
+          <div class="a-icon"><span class="iconify" data-icon="iconsax:target" data-inline="false"></span></div>
+          <h4>Made for Grade 10 students specifically</h4>
+          <p>Not for everyone in general — for you, right now, as you prepare to move into Senior High School and actually have to make this choice.</p>
+        </div>
+        <div class="about-card">
+          <div class="a-icon"><span class="iconify" data-icon="iconsax:clipboard" data-inline="false"></span></div>
+          <h4>Uses the real DepEd curriculum</h4>
+          <p>Everything here is based on the official Strengthened SHS Program from DepEd. The subjects, clusters, and tracks are not made up — they're the real thing.</p>
+        </div>
+        <div class="about-card">
+          <div class="a-icon"><span class="iconify" data-icon="iconsax:map" data-inline="false"></span></div>
+          <h4>One place for all the info you need</h4>
+          <p>Instead of Googling a hundred different things and still feeling lost, everything about each cluster is organized in one clear, easy-to-read place.</p>
+        </div>
+        <div class="about-card">
+          <div class="a-icon"><span class="iconify" data-icon="iconsax:microscope" data-inline="false"></span></div>
+          <h4>Part of a real research study</h4>
+          <p>This is a system built and studied by Grade 12 researchers at STI College Cubao to measure whether a digital navigation tool actually helps students like you make better cluster choices.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <a class="footer-logo" href="#Home"><span class="iconify" data-icon="iconsax:compass" data-inline="false" style="margin-right:8px"></span> STI Project<em>TrackFind</em></a>
+    <p>A Senior High School Track Navigation System for Grade 10 Students<br>
+    Ponciano Bernardo High School · STI College Cubao · School Year 2024–2025</p>
+    <div class="footer-links">
+      <a href="#Tracks">Tracks</a>
+      <a href="#Quiz">Quiz</a>
+      <a href="#About">About</a>
+    </div>
+    <p class="authors">STI Practical Research 2 (Group 2)<br>
+    Ismael · Amoroso · Madridejos · Regidor · Defensor · Mantes · Soriano · Robles · Domanico</p>
+  </footer>
+
+  <!-- MODAL -->
+  <div class="overlay" id="overlay">
+    <div class="modal" id="modalBox">
+      <button class="modal-x" id="modalClose"><span class="iconify" data-icon="iconsax:close" data-inline="false"></span></button>
+      <div id="modalBody"></div>
+    </div>
+  </div>
+
+  <!-- CHATBOT -->
+  <button id="chatFab" aria-label="Open chat"><span class="iconify" data-icon="iconsax:message" data-inline="false"></span></button>
+  <div id="chatPanel">
+    <div class="chat-header">
+      <span>STI SHS Guide</span>
+      <button id="chatClose"><span class="iconify" data-icon="iconsax:close" data-inline="false"></span></button>
+    </div>
+    <div id="chatMsgs">
+      <div class="chat-msg bot">Hi! I'm your STI College Cubao guide. Ask me about SHS tracks, clusters, or enrollment!</div>
+    </div>
+    <div class="chat-input-row">
+      <input id="chatInput" type="text" placeholder="Ask about tracks or clusters...">
+      <button id="chatSend" class="btn-primary">Send</button>
+    </div>
+  </div>
+
+  <script src="data.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
